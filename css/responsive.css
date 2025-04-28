@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+    #intro {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 10px;
+    }
+  
+    .resumo {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #4B0082;
+      width: 100%;
+    }
+  
+    nav.active ul {
+      display: flex;
+    }
+  
+    .menu-hamburguer {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      top: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav ul li a {
+      font-size: 16px;
+    }
+  
+    .foto img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    section {
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  
+    h3 {
+      font-size: 18px;
+    }
+  }
+  
