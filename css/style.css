@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Homemade+Apple&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
   margin: 0;
@@ -53,8 +54,8 @@ header {
 }
 
 .redes-sociais img {
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
 }  
 
 nav ul {
@@ -159,7 +160,7 @@ footer {
 }
 
 .bloco .imagem img {
-  width: 300px;
+  width: 350px;
   max-width: 100%;
   border-radius: 10px;
 }
@@ -186,4 +187,157 @@ footer {
 
 .bloco .texto p {
   font-size: 18px;
+}
+
+.botoes-linguagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.linguagem {
+  padding: 12px;
+  background-color: rgb(10, 10, 10);
+  border: 2px solid black;
+  cursor: pointer;
+  transition: transform 0.4s ease, background 0.6s ease, border 0.4s ease, opacity 0.4s ease, box-shadow 0.6s ease;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.3;
+  border-radius: 10px; /* Deixa as bordas mais bonitas */
+}
+
+#experiencias h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linguagem img {
+  width: 90px;
+  height: 90px;
+  transition: filter 0.4s ease, opacity 0.4s ease;
+}
+
+.linguagem:hover {
+  background: linear-gradient(45deg, rgb(66, 0, 66), #cf05d6);
+  border: 2px solid black;
+  transform: scale(1.15);
+  opacity: 1;
+  box-shadow: 0 0 20px #cf05d6, 0 0 40px #cf05d6; /* Aqui entra o brilho! */
+}
+
+.linguagem:hover img {
+  opacity: 1;
+}
+
+#projetos {
+  padding: 40px 20px 60px;
+  background-color: black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+.conteiner-card{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: linear-gradient(135deg, #141414, #000000);
+  border: 2px solid #1d1d1d;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  max-width: 600px;
+  margin: 20px auto;
+  cursor: pointer;
+  position: relative;
+
+  width: 500px; 
+}
+
+.card .card-descricao a{
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.card-titulo {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background: #0f0f0f;
+  transition: background 0.4s ease;
+}
+
+.card-titulo:hover {
+  background: #55007d;
+}
+
+.card-descricao {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.6s ease;
+  padding: 0 20px;
+  background: #111;
+  color: white;
+}
+
+.card:hover .card-descricao {
+  max-height: 500px;
+  opacity: 1;
+  padding: 20px;
+}
+
+.card-descricao p,
+.card-descricao a {
+  margin: 15px 0;
+}
+
+#contato {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.contato-icones {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contato-icones a img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 50%; /* bordas arredondadas para um visual mais moderno */
+  background-color: #222; /* fundo discreto */
+  padding: 0px;
+}
+
+.contato-icones a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+  box-shadow: 0 0 15px #cf05d6, 0 0 25px #cf05d6;
+  background-color: #cf05d6;
 }

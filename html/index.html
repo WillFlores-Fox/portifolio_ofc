@@ -15,29 +15,22 @@
     <div class="header-container">
       <div class="logo-redes">
         <img src="../public/java.png" alt="Logo" class="logo">
-        <div class="redes-sociais">
-          <a href="#"><img src="../public/instagram.png" alt="Instagram"></a>
-          <a href="#"><img src="../public/reddit (1).png" alt="Reddit"></a>
-          <a href="#"><img src="../public/github (1).png" alt="GitHub"></a>
+        <div class="menu-hamburguer" id="menu-hamburguer">
+          &#9776;
         </div>
       </div>
-
-      <div class="menu-hamburguer" id="menu-hamburguer">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
+  
       <nav id="nav">
         <ul>
-          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#intro">Início</a></li>
+          <li><a href="#conteudo-central">Sobre</a></li>
           <li><a href="#experiencias">Experiências</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </div>
-  </header>
+  </header>  
 
   <section id="intro">
     <div class="resumo">
@@ -47,7 +40,7 @@
     </div>
   </section>
 
-  <div id="sobre" ></div>
+  <div id="sobre"></div>
 
   <section id="conteudo-central">
     <div class="bloco">
@@ -102,40 +95,141 @@
         <img src="https://via.placeholder.com/300x200?text=Imagem+3" alt="Imagem 3">
       </div>
       <div class="texto">
-        <h3>Paixão por Programação</h3>
-        <p>Encontrar na programação um hobby e profissão me motiva a cada novo desafio e projeto que desenvolvo.</p>
+        <h3>Habilidades pessoais:</h3>
+        <h4>Musico:</h4>
+        <p>Sou musico faz uns 3 ou 4 anos, não tive a oportunidade de compor uma musica, porém experiência tenho em
+          varios instrumentos, como: ukulele, cavaqunhi, violão, bateria, meia-lua e teclado. Mesmo sabendo a quantidade
+          de instrumentos mencionados, ainda pretendo conhecer guitarra, baixo e contrabaixo.</p>
+        <br>
+        <h4>Desenhista:</h4>
+        <p>sou desenhista desde pequeno, ja fiz diversos trabalhos com diferentes tecnicas, com: pintura em grafite,
+          pintura em tecidos e pinturas gerais com tela, mesmo não tendo muito avanço nas técnicas e tudo mais, eu faço
+          meu melhor para entregar o melhor para aqueles que me procuram.</p>
+        <br>
+        <h4>Designer gráfico:</h4>
+        <p>tenho experiência nessa area á 4 anos, mesmo não possuindo certificado ou qualquer aprovação profissional,
+          consegui ter a oportunidade de fazer artes para pessoas as quais me contataram, para fazer banners, convites,
+          cartões de visita e etc.</p>
       </div>
     </div>
   </section>
 
   <section id="experiencias">
     <h2>Minhas Experiências</h2>
-    <div class="experiencia">
-      <h3>Pessoal</h3>
-      <p>Experiências pessoais relevantes.</p>
-    </div>
-    <div class="experiencia">
-      <h3>Escolar</h3>
-      <p>Formação acadêmica e cursos.</p>
-    </div>
-    <div class="experiencia">
-      <h3>Profissional</h3>
-      <p>Atuação como programador e técnico de TI.</p>
-    </div>
-  </section>
 
+    <div class="botoes-linguagens">
+      <button class="linguagem">
+        <img src="../public/java.png" alt="Java">
+      </button>
+      <button class="linguagem">
+        <img src="../public/html.png" alt="HTML">
+      </button>
+      <button class="linguagem">
+        <img src="../public/css-3.png" alt="CSS">
+      </button>
+      <button class="linguagem">
+        <img src="../public/script-java.png" alt="JavaScript">
+      </button>
+      <button class="linguagem">
+        <img src="../public/python.png" alt="Python">
+      </button>
+      <button class="linguagem">
+        <img src="../public/scratch.png" alt="Scratch">
+      </button>
+      <button class="linguagem">
+        <img src="../public/moon.png" alt="Moon">
+      </button>
+    </div>
+
+  </section>
   <section id="projetos">
     <h2>Meus Projetos</h2>
-    <div class="projeto">
-      <h3>Projeto 1</h3>
-      <p>Descrição de um projeto que você realizou.</p>
+    <div class="conteiner-card">
+
+      <div class="card">
+        <div class="card-titulo">
+          Jogo da adivinhação
+        </div>
+        <div class="card-descricao">
+          <p>Primeiro jogo criado em java, todo projetado com interface JOptionPane. O jogo ainda esta em sua versão
+            antiga, porém, uma nova atualização será feita.</p>
+          <a href="https://github.com/WillFlores-Fox/Jogo_Da_Adivinhacao.git" target="_blank">Ver Projeto</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-titulo">
+          Introdução JavaScript
+        </div>
+        <div class="card-descricao">
+          <p>Primeiro contato com a linguagem JavaScript colocada em pratica, possuindo os primeiros passos básicos.</p>
+          <a href="https://github.com/WillFlores-Fox/Introducao_JS.git" target="_blank">Ver Projeto</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-titulo">
+          Introdução ao DTO, DAO, View
+        </div>
+        <div class="card-descricao">
+          <p>Primeira colocação pratica do meio de organização DTO, DAO e View.</p>
+          <a href="https://github.com/WillFlores-Fox/DTO-DAO-View.git" target="_blank">Ver Projeto</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-titulo">
+          Ligando banco de dados com Java
+        </div>
+        <div class="card-descricao">
+          <p>Primeiro teste com a ligação e salvamento de cadastro em java para o banco de dados.</p>
+          <a href="https://github.com/WillFlores-Fox/Java-Banco.git" target="_blank">Ver Projeto</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-titulo">
+          Trabalhos Projeto Orientado a Objeto
+        </div>
+        <div class="card-descricao">
+          <p>Conjunto de atividades do dia a dia para a criação de objetos, classes e ligações.</p>
+          <a href="https://github.com/WillFlores-Fox/TrabalhoObjeto1.git" target="_blank">Ver Projeto</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-titulo">
+          Ligando banco de dados com Java
+        </div>
+        <div class="card-descricao">
+          <p>Primeiro teste com a ligação e salvamento de cadastro em java para o banco de dados.</p>
+          <a href="https://github.com/WillFlores-Fox/Java-Banco.git" target="_blank">Ver Projeto</a>
+        </div>
+      </div>
     </div>
+
   </section>
 
   <section id="contato">
     <h2>Contato</h2>
-    <p>Seu email, telefone e redes sociais.</p>
-  </section>
+    <div class="contato-icones">
+      <a href="mailto:willflores2007@email.com" target="_blank">
+        <img src="../public/logo escura/o-email.png" alt="Email">
+      </a>
+      <a href="https://wa.me/5551996390515?text=Ol%C3%A1%20William%2C%20gostaria%20de%20falar%20sobre%20oportunidades%20na%20%C3%A1rea%20de%20TI." target="_blank">
+        <img src="../public/logo escura/whatsapp (1).png" alt="WhatsApp">
+      </a>
+      <a href="https://www.instagram.com/will_flores_ofc?igsh=YzJmaHF4Njh0cjR0" target="_blank">
+        <img src="../public/logo escura/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://github.com/WillFlores-Fox" target="_blank">
+        <img src="../public/logo escura/github (1).png" alt="GitHub">
+      </a>
+      <a href="https://www.reddit.com/user/Sr-Afton/" target="_blank">
+        <img src="../public/logo escura/" alt="GitHub">
+      </a>
+    </div>
+  </section>  
 
   <footer>
     <p>&copy; 2025 William Flores. Todos os direitos reservados.</p>
