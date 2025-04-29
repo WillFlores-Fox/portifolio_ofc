@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Cookie&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Homemade+Apple&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
   margin: 0;
@@ -27,6 +26,23 @@ header {
   background-color: black;
   padding: 10px 0;
   z-index: 1000;
+  transition: height 0.3s ease;
+  height: 80px;
+  overflow: hidden;
+}
+
+header.expandido {
+  height: 250px;
+}
+
+#nav {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#nav.aberto {
+  display: flex;
 }
 
 .header-container {
@@ -56,7 +72,7 @@ header {
 .redes-sociais img {
   width: 34px;
   height: 34px;
-}  
+}
 
 nav ul {
   list-style: none;
@@ -78,8 +94,12 @@ nav ul li a {
 
 .menu-hamburguer {
   display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }
 
+/* Seção Intro */
 #intro {
   display: flex;
   flex-direction: column;
@@ -105,6 +125,7 @@ nav ul li a {
   margin: 0 auto;
 }
 
+/* Seções Gerais */
 section {
   padding: 40px 20px;
   margin: 0;
@@ -138,6 +159,7 @@ footer {
   width: 100%;
 }
 
+/* Conteúdo Central */
 #conteudo-central {
   background-color: black;
   padding: 40px 20px;
@@ -149,14 +171,11 @@ footer {
   justify-content: center;
   margin-bottom: 40px;
   flex-wrap: wrap;
-
   max-width: 1200px;
 }
 
 .bloco.inverso {
   flex-direction: row-reverse;
-
-  max-width: 1200px;
 }
 
 .bloco .imagem img {
@@ -189,6 +208,7 @@ footer {
   font-size: 18px;
 }
 
+/* Linguagens */
 .botoes-linguagens {
   display: flex;
   flex-wrap: wrap;
@@ -209,7 +229,7 @@ footer {
   justify-content: center;
   align-items: center;
   opacity: 0.3;
-  border-radius: 10px; /* Deixa as bordas mais bonitas */
+  border-radius: 10px;
 }
 
 #experiencias h2 {
@@ -226,16 +246,16 @@ footer {
 
 .linguagem:hover {
   background: linear-gradient(45deg, rgb(66, 0, 66), #cf05d6);
-  border: 2px solid black;
   transform: scale(1.15);
   opacity: 1;
-  box-shadow: 0 0 20px #cf05d6, 0 0 40px #cf05d6; /* Aqui entra o brilho! */
+  box-shadow: 0 0 20px #cf05d6, 0 0 40px #cf05d6;
 }
 
 .linguagem:hover img {
   opacity: 1;
 }
 
+/* Projetos */
 #projetos {
   padding: 40px 20px 60px;
   background-color: black;
@@ -243,11 +263,10 @@ footer {
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  height: auto;
   width: 100%;
 }
 
-.conteiner-card{
+.conteiner-card {
   height: 500px;
   width: 100%;
   display: flex;
@@ -266,11 +285,10 @@ footer {
   margin: 20px auto;
   cursor: pointer;
   position: relative;
-
-  width: 500px; 
+  width: 500px;
 }
 
-.card .card-descricao a{
+.card .card-descricao a {
   text-decoration: none;
   color: white;
   font-weight: 800;
@@ -311,6 +329,7 @@ footer {
   margin: 15px 0;
 }
 
+/* Contato */
 #contato {
   padding: 40px 20px;
   text-align: center;
@@ -330,9 +349,8 @@ footer {
   width: 70px;
   height: 70px;
   transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
-  border-radius: 50%; /* bordas arredondadas para um visual mais moderno */
-  background-color: #222; /* fundo discreto */
-  padding: 0px;
+  border-radius: 50%;
+  background-color: #222;
 }
 
 .contato-icones a img:hover {
@@ -340,4 +358,128 @@ footer {
   filter: brightness(1.5);
   box-shadow: 0 0 15px #cf05d6, 0 0 25px #cf05d6;
   background-color: #cf05d6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 0 20px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .bloco,
+  .bloco.inverso {
+    flex-direction: column;
+  }
+
+  .bloco .imagem img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .bloco .texto,
+  .bloco.inverso .texto {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-hamburguer {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 430px;
+    display: none;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 10px 0; /* Espaço interno para ajudar no alinhamento */
+  }
+
+  #nav.aberto ul {
+    display: flex;
+  }
+
+  .resumo h1 {
+    font-size: 50px;
+  }
+
+  .resumo p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .botoes-linguagens {
+    gap: 10px;
+  }
+
+  .linguagem {
+    width: 120px;
+    height: 120px;
+  }
+
+  .linguagem img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .conteiner-card {
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .resumo h1 {
+    font-size: 38px;
+  }
+
+  .linguagem {
+    width: 100px;
+    height: 100px;
+  }
+
+  .linguagem img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-titulo {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .card-descricao a {
+    font-size: 20px;
+  }
+
+  .contato-icones a img {
+    width: 50px;
+    height: 50px;
+  }
 }
