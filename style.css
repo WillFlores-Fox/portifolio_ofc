@@ -99,7 +99,6 @@ nav ul li a {
   cursor: pointer;
 }
 
-/* Seção Intro */
 #intro {
   display: flex;
   flex-direction: column;
@@ -125,7 +124,6 @@ nav ul li a {
   margin: 0 auto;
 }
 
-/* Seções Gerais */
 section {
   padding: 40px 20px;
   margin: 0;
@@ -159,7 +157,6 @@ footer {
   width: 100%;
 }
 
-/* Conteúdo Central */
 #conteudo-central {
   background-color: black;
   padding: 40px 20px;
@@ -255,7 +252,6 @@ footer {
   opacity: 1;
 }
 
-/* Projetos */
 #projetos {
   padding: 40px 20px 60px;
   background-color: black;
@@ -329,7 +325,6 @@ footer {
   margin: 15px 0;
 }
 
-/* Contato */
 #contato {
   padding: 40px 20px;
   text-align: center;
@@ -360,7 +355,6 @@ footer {
   background-color: #cf05d6;
 }
 
-/* RESPONSIVO */
 @media (max-width: 1024px) {
   .header-container {
     padding: 0 20px;
@@ -387,6 +381,26 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header{
+    height: 100px;
+  }
+  
+  #nav {
+    display: none;
+  }
+
+  #nav.aberto {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding: 80px;
+    transition: 0.5s;
+  }
+
+  header.expandido {
+    height: auto;
+  }
+  
   .menu-hamburguer {
     display: block;
   }
@@ -396,12 +410,11 @@ footer {
     background-color: black;
     position: absolute;
     top: 90px;
-    right: 0;
-    width: 415px;
+    width: 0%;
     display: none;
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    padding: 10px 0; /* Espaço interno para ajudar no alinhamento */
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0; 
   }
 
   #nav.aberto ul {
